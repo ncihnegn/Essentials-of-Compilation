@@ -901,7 +901,7 @@ evaluator on several examples and tests the output program.  The
 \begin{lstlisting}
 (define (test-pe p)
   (assert "testing pe-arith"
-     (equal? (interp-R0 p) (interp-R0 (pe-arith p)))))
+    (equal? (interp-exp p) (interp-exp (pe-arith p)))))
 
 (test-pe `(+ (read) (- (+ 5 3))))
 (test-pe `(+ 1 (+ (read) 1)))
